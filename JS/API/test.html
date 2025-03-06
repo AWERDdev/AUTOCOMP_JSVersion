@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typo Fixer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        input {
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Typo Fixer</h2>
+    <input type="text" id="inputText" placeholder="Type here...">
+    <button onclick="fixTypos()">Fix Typos</button>
+    <p>Fixed Text: <span id="outputText"></span></p>
+
+    <script>
+        const typoDictionary = {
+            "typoos": "typos",
+            "recieve": "receive",
+            "teh": "the",
+            "adress": "address",
+            "definately": "definitely"
+        };
+
+        function fixTypos() {
+            let input = document.getElementById("inputText").value.split(" ");
+            let correctedText = input.map(word => typoDictionary[word] || word).join(" ");
+            document.getElementById("outputText").innerText = correctedText;
+        }
+    </script>
+</body>
+</html>

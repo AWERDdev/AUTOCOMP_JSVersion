@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  --backgound-m-blue-100:"blue-100";
+  --backgound-white:"white";
+  --text-blue:"blue-600";
+  --gray:"gray-600";
+  --gray-light:"gray-100";
+  scrollbar-width: thin;
+}
