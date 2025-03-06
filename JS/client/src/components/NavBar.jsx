@@ -9,7 +9,7 @@ function NavBar() {
             <a href="https://github.com/AWERDdev" className="text-[1rem] md:text-[1.5rem] text-gray-800 font-bold">
               AWERDdev
             </a>
-            <a href="https://github.com/AWERDdev/PythonProject" className="text-[1rem] md:text-[1.5rem] text-gray-800 font-bold">
+            <a href="https://github.com/AWERDdev/AUTOCOMP_JSVersion" className="text-[1rem] md:text-[1.5rem] text-gray-800 font-bold">
               AppRepo
             </a>
           </div>
