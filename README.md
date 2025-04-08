@@ -40,7 +40,7 @@ npm install
 
 4. Start the backend server:
 ```bash
-npm run devstart
+npm run Devstart
 ```
 
 5. In a new terminal, navigate to the client directory and install frontend dependencies:
